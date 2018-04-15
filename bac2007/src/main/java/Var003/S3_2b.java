@@ -7,7 +7,7 @@ public class S3_2b {
         int counter =0;
 
         while (cifra!=0) {
-            cifra = number / 10;
+            cifra = cifra / 10;
             counter++;
         }
 

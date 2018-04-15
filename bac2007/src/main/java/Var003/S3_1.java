@@ -1,6 +1,7 @@
 package Var003;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class S3_1 {
@@ -33,13 +34,8 @@ public class S3_1 {
         return matrix;
     }
 
-    public static void S3_1_withArrayList() {
-        Scanner keyboard = new Scanner(System.in);
-
-        System.out.println("Insert a number n= ");
-        int n = keyboard.nextInt();
-
-        ArrayList<ArrayList<Integer>> outer = new ArrayList<ArrayList<Integer>>();
+    public List<List<Integer>>  S3_1_withArrayList(int n) {
+        List<List<Integer>> outer = new ArrayList<List<Integer>>();
 
         for (int indexLinie = 0; indexLinie < n; indexLinie++) {
             ArrayList<Integer> inner = new ArrayList<>();
@@ -54,5 +50,7 @@ public class S3_1 {
             outer.add(inner);
             System.out.println(" ");
         }
+
+        return outer;
     }
 }

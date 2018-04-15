@@ -6,7 +6,7 @@ public class MainS3_1
 
         S3_1 subject = new S3_1();
        // subject.S3_1();
-        subject.S3_1_withArrayList();
+        subject.S3_1_withArrayList(5);
     }
 
 }
