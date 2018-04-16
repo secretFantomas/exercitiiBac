@@ -11,11 +11,6 @@ public class S3_2b {
             counter++;
         }
 
-
-        if (counter>4)
-            return;
-        else
-            System.out.println("e ok");
     }
 
     public static void main(String[] args) {
