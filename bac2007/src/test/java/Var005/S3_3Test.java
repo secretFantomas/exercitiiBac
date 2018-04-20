@@ -7,16 +7,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static org.junit.Assert.assertEquals;
+
 public class S3_3Test {
 
     @Test
     public void dublareLiteraInSirDeCaractere() {
+        S3_3 subject = new S3_3();
 
-        String[] values = {"a", "b", "r", "a", "c", "a", "d", "a", "b", "r", "a"};
-        String letter = "a";
+        ArrayList<Character> values = new ArrayList<>();
+        values.add('a');
+        values.add('b');
+        values.add('r');
+        values.add('a');
+        char letter = 'a';
 
-        String[] expectedResult = {"a", "b", "r", "a", "c", "a", "d", "a", "b", "r", "a"};
-
+        ArrayList<Character> expectedResult = 'aabraa';
+        ArrayList<Character> receivedResult =subject.dublareLiteraInSirDeCaractere(values,letter);
+        assertEquals(expectedResult, receivedResult);
 
     }
 
@@ -35,13 +43,6 @@ public class S3_3Test {
 //            e.printStackTrace();
 //        }
 //        System.out.println("Your letter is: " + letter);
-
-        String[] values = {"a", "b", "r", "a", "c", "a", "d", "a", "b", "r", "a"};
-        List<String[]> list = new ArrayList<>();
-
-        list.add(values);
-        System.out.println(list.get(6));
-
 
     }
 }
