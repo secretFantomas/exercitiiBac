@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,7 +23,24 @@ public class S3_3Test {
         values.add('a');
         char letter = 'a';
 
-        ArrayList<Character> expectedResult = 'aabraa';
+        List<Character> expectedResult = Arrays.asList('a','a','b','r','a','a');;
+        ArrayList<Character> receivedResult =subject.dublareLiteraInSirDeCaractere(values,letter);
+        assertEquals(expectedResult, receivedResult);
+
+    }
+
+    @Test
+    public void dublareLiteraInSirDeCaractereV2() {
+        S3_3 subject = new S3_3();
+
+        ArrayList<Character> values = new ArrayList<>();
+        values.add('i');
+        values.add('d');
+        values.add('e');
+        values.add('e');
+        char letter = 'e';
+
+        List<Character> expectedResult = Arrays.asList('i','d','e','e','e','e');;
         ArrayList<Character> receivedResult =subject.dublareLiteraInSirDeCaractere(values,letter);
         assertEquals(expectedResult, receivedResult);
 
