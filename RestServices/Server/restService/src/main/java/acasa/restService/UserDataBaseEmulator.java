@@ -11,11 +11,11 @@ public class UserDataBaseEmulator {
         lastUser = user;
     }
 
-    private static User getUser(){
+    public static User getUser(){
         return lastUser;
     }
 
-    private static void deleteUser(){
+    public static void deleteUser(){
         lastUser = null;
     }
 
