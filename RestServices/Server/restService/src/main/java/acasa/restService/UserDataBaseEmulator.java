@@ -5,7 +5,7 @@ package acasa.restService;
  */
 public class UserDataBaseEmulator {
 
-    private static User lastUser = null;
+    private static User lastUser = new User("UserDefault",-100);
 
     public static void setUser(User user){
         lastUser = user;
