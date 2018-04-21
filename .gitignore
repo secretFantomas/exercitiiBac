@@ -13,3 +13,4 @@ RestServices/Server/restService/.idea/
 RestServices/Server/restService/.gradle/
 RestServices/Server/restService/build/
 RestServices/Server/restService/restService.iml
+RestServices/Client/gradle/
