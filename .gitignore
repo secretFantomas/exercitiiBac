@@ -5,3 +5,7 @@ bac2007/gradlew.bat
 bac2007/gradlew
 bac2007/out/
 Android/Hotel app/Hotel/.idea/
+RestServices/Server/restService/gradle/
+RestServices/Server/restService/gradlew.bat
+RestServices/Server/restService/settings.gradle
+RestServices/Server/restService/gradlew
