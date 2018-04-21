@@ -9,3 +9,7 @@ RestServices/Server/restService/gradle/
 RestServices/Server/restService/gradlew.bat
 RestServices/Server/restService/settings.gradle
 RestServices/Server/restService/gradlew
+RestServices/Server/restService/.idea/
+RestServices/Server/restService/.gradle/
+RestServices/Server/restService/build/
+RestServices/Server/restService/restService.iml
