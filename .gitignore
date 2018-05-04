@@ -14,3 +14,5 @@ RestServices/Server/restService/.gradle/
 RestServices/Server/restService/build/
 RestServices/Server/restService/restService.iml
 RestServices/Client/gradle/
+Android/English_Deutsch_app/.idea/
+Android/English_Deutsch_app/gradle/wrapper/
