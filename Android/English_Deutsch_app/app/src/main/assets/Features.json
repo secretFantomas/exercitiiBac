@@ -1,0 +1,143 @@
+ [ {
+  "id":1,
+  "type": "account_required",
+  "title":"Account Required",
+  "description":"",
+  "minimumPlan": "Free",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": ["iOS"]
+  },
+  
+  {
+  "id":2,
+  "type": "count_limit",
+  "title":"Count Limit",
+  "description":"Maximum number of items per photo",
+  "textValues": [{"plan" : "Basic", "value" : "500"}, {"plan" : "Pro", "value" : "Unlimited"}],
+  "minimumPlan": "Free",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":3,
+  "type": "counting_templates",
+  "title":"Counting Templates",
+  "description":"Access to all existing Counting Templates and future updates ",
+  "minimumPlan": "Free",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":4,
+  "type": "define_area",
+  "title":"Define Counting Area",
+  "description":"Draw an area and count only the items you need",
+  "minimumPlan": "Free",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":5,
+  "type": "adjust_size",
+  "title":"Adjust Object Size",
+  "description":"Improve counting accuracy and speed by selecting the object size range",
+  "minimumPlan": "Free",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":6,
+  "type": "review_counts",
+  "title":"Review Large Counts",
+  "description":"Additional way to easily correct photos with large number of items",
+  "minimumPlan": "Basic",
+  "notAvailableOnOS":["iOS","Android"],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":7,
+  "type": "specify_location",
+  "title":"Specify Location for Saved Results",
+  "description":"Save the input photo, the image with the counting results and the editable version to a specific location on your device",
+  "minimumPlan": "Basic",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":8,
+  "type":"save_csv",
+  "title":"Save Results in CSV",
+  "description":"Save counting results data in csv format",
+  "minimumPlan": "Basic",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+   {
+     "id":9,
+     "type": "cloud_synchronization",
+     "title":"Cloud Synchronization",
+     "description":"Save your results on the cloud (Dropbox, Google Drive or OneDrive)",
+     "minimumPlan": "Pro",
+     "notAvailableOnOS":[],
+     "notVisibleOnOS": []
+   },
+  {
+  "id":10,
+  "type":"customizable_forms",
+  "title":"Customizable Forms for Inventory",
+  "description":"Improve your inventory tracking by adding forms to the counting process",
+  "minimumPlan": "Pro",
+  "notAvailableOnOS":["iOS"],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":11,
+  "type":"batch_counting",
+  "title":"Batch Counting",
+  "description":"Automated counting of multiple batches of photos",
+  "minimumPlan": "Pro",
+  "notAvailableOnOS":["Android"],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":12,
+  "type":"gopro_integration",
+  "title":"GoPro Integration",
+  "description":"Count from the GoPro camera's live feed",
+   "minimumPlan": "Pro",
+  "notAvailableOnOS":[],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":13,
+  "type":"database_integration",
+  "title":"Database integration",
+  "description":"Add automated counting to your current inventory system (SQL, SAP, Oracle, etc)",
+  "minimumPlan": "Pro",
+  "notAvailableOnOS":["iOS","Android"],
+  "notVisibleOnOS": []
+  },
+  {
+  "id":14,
+  "type":"customizable_reports",
+  "title":"Customizable Reports, Ticket or Labels",
+  "description":"Create your own reports based on count results and form entries",
+  "minimumPlan": "Pro",
+  "notAvailableOnOS":["iOS","Android"],
+  "notVisibleOnOS": []
+  },
+   {
+     "id":15,
+     "type":"unattended_automated",
+     "title":"Unattended Automated Counting",
+     "description":"Automatically count items without user intervention when the images are dropped into a specific folder",
+     "minimumPlan": "Pro",
+     "notAvailableOnOS":["iOS","Android"],
+     "notVisibleOnOS": []
+   }
+  ]
+
+
+
+
+

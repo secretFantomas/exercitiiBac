@@ -55,6 +55,12 @@
         android:background="@color/category_phrases"
         android:text="@string/category_phrases" /> />
 
+        <TextView
+            android:id="@+id/games"
+            style="@style/CategoryStyle"
+            android:background="@color/category_games"
+            android:text="@string/category_games" /> />
+
     <TextView
         android:id="@+id/others"
         style="@style/CategoryStyle"

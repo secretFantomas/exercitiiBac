@@ -13,5 +13,6 @@
     <color name="category_colors">#8e40e8</color>
     <color name="category_vegetables">#c4e23f</color>
     <color name="category_phrases">#16AFCA</color>
+    <color name="category_games">#f2bae9</color>
     <color name="category_others">#e54059</color>
 </resources>
