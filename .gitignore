@@ -16,3 +16,6 @@ RestServices/Server/restService/restService.iml
 RestServices/Client/gradle/
 Android/English_Deutsch_app/.idea/
 Android/English_Deutsch_app/gradle/wrapper/
+springBoot/HotelAppServer/gradlew.bat
+springBoot/HotelAppServer/gradle/
+springBoot/HotelAppServer/gradlew
