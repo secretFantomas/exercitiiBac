@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView family = findViewById(R.id.family);
-        numbers.setOnClickListener(new View.OnClickListener() {
+        family.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, FamilyActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
         });
