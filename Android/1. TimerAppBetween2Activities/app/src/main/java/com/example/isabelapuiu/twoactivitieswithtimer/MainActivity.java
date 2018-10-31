@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         startBtn = (Button) findViewById(R.id.startBtn);
         timerText = (TextView) findViewById(R.id.timerText);
 
-       // updateTimer();
-
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,19 +37,7 @@ public class MainActivity extends AppCompatActivity {
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countDownTimer = new CountDownTimer(timeLeftInMillieSeconds, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        timeLeftInMillieSeconds = millisUntilFinished;
-                        updateTimer();
-                    }
-
-                    @Override
-                    public void onFinish() {
-
-                    }
-                }.start();
-
+                startTimer();
             }
         });
     }
@@ -71,5 +58,35 @@ public class MainActivity extends AppCompatActivity {
         }
 
         timerText.setText(timeLeftText);
+        Log.i("tag",timeLeftText);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        countDownTimer.cancel();
+    }
+
+    private void startTimer(){
+        countDownTimer = new CountDownTimer(timeLeftInMillieSeconds, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeftInMillieSeconds = millisUntilFinished;
+                updateTimer();
+            }
+
+            @Override
+            public void onFinish() {
+
+            }
+        }.start();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (countDownTimer!=null) {
+            startTimer();
+        }
     }
 }
